@@ -13,9 +13,9 @@
         <aside class="nav_logo"><img src="./img/logo/logo.png" alt="nav_logo">
             <h1 class="header_text">Thailand</h1>
             <div class="links_navbar">
-                <button><img src="./img//header/nearest_tours_button.png" alt="nearest_tours_button"></button>
-                <button><img src="./img//header/blog_button.png" alt="blog_button"></button>
-                <button><img src="./img//header/contacts_button.png" alt="contacts_button"></button>
+                <button onclick="document.location = '#big_photo'"><img src="./img//header/nearest_tours_button.png" alt="nearest_tours_button"></button>
+                <button onclick="document.location = './html/blog.html'"><img src="./img//header/blog_button.png" alt="blog_button"></button>
+                <button onclick="document.location = '#contacts'"><img src="./img//header/contacts_button.png" alt="contacts_button"></button>
             </div>
         </aside>
         <img class="header_main" src="./img/header/header_main.jpg" alt="">
@@ -35,40 +35,40 @@
                 <article class="guides">
                     <img class="guides_photo" src="./img/main/guide_1_info.png" alt="guide_1_info">
                     <img class="guides_photo" src="./img/main/guide_2_info.png" alt="guide_2_info">
-                    <iframe width="45%" height="290px" src="https://www.youtube.com/embed/Kjuuq-jWJ5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                    <iframe width="45%" height="290px" src="https://www.youtube.com/embed/Kjuuq-jWJ5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
                 </article>
             </section>
 
             <section>
-                <img class="big_photo" src="./img/main/Page_3.png" alt="big_photo">
+                <img id="big_photo" src="./img/main/page_3.png" alt="big_photo">
             </section>
 
         </main>
-        <footer class="footer">
+        <footer id='contacts' class="footer">
             <img src="./img/logo/logo.png" alt="logo" class="logo_footer">
             <ul>
-                <span>Направления</span>
+                <a href="#">Направления</a>
                 <li>Тайланд</li>
                 <li>Лаос</li>
                 <li>Малайзия</li>
                 <li>Сингапур</li>
             </ul>
             <ul>
-                <span>Контакты</span>
-                <li>Kyiv, 
-                    Verkhovynna St, 2</li>
+                <a href="#">Контакты</a>
+                <li>Kyiv, Verkhovynna St, 2</li>
                 <li>+380 44-111-22-33</li>
             </ul>
             <ul>
-                <span>Бронь</span>
+                <a href="#big_photo">Бронь</a>
                 <li>Выбрать гида</li>
                 <li>Бронь тура</li>
             </ul>
             <ul>
-                <span>Блог</span>
+                <a href="./html//blog.html">Блог</a>
                 <li>Галерея путешествий</li>
                 <li>Неповторимые пейзажи</li>
             </ul>
+            <button onclick="document.location='#'">&#11180Back</button>
         </footer>
 </body>
 </html>
